@@ -51,7 +51,7 @@
     #info
     {
         text-align: center;
-        color: rgb(210 205 214);
+        color: rgb(206 206 206);
         text-shadow: 0 4px 10px rgb(29 28 29);
     }
     #skl
@@ -146,7 +146,7 @@
         padding: 30px 10px 10px 10px ;
         background: url(https://images.unsplash.com/photo-1557599443-2071a2df9c19?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=782&q=80);
         background-repeat: no-repeat;
-        color: rgb(210 205 214);
+        color: rgb(203 203 203);
         display: flex;
         flex-direction: column;
         align-items: center;
