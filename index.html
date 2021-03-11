@@ -4,26 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" type="image/png" href="icons/brand.png" style="width: 30px;height: 30px;">
     <title>S 07 KUMAR</title>
 </head>
 <body>
+	<nav>
+		<div>
+			<a href=""><img src="icons/brand.png" alt="" id="nav-brand"></a>
+		</div>
+		<div id="links">
+			<div><a href="#about-me">About Me</a></div>
+			<div><a href="">Experience</a></div>
+			<div><a href="#main">Projects</a></div>
+			<div><a href="#footer">Know More</a></div>
+		</div>
+	</nav>
     <div id="head-container">
         <div id="head">
-            <div id="img-container">
-                <img src="images/photo.jpg" alt="shubham">
-            </div>
+			<img id="shubham" src="images/photo.png" alt="shubham">
             <div id="info">
-               <p style="font-family: candara;font-size:37px;margin-bottom: 0;font-weight: 600;">Shubham Kumar</p>
-               <span style="font-family: 'Courier New', Courier, monospace;">
-                <p style="font-size: 20px;font-weight: 600;">Frontend Web Developer</p>
+               	<p style="font-family: candara;font-size:37px;margin-bottom: 0;font-weight: 600;">Shubham Kumar</p>
+            	<p style="font-size: 20px;font-weight: 600;">Frontend Web Developer</p>
                 <p style="font-size: 15px;vertical-align: middle;">Student at SSCBS <img id="skl" style="width: 25px;height: 25px;" src="icons/graduate.png" alt="graduate">'22</p>
                 <p><span style="font-size: 25px;vertical-align:middle;font-weight: 600;">Skills:</span> <img id="skl" src="icons/html.png" alt="HTML" title="HTML5"> <img id="skl" src="icons/css.png" alt="CSS" title="CSS3"> <img id="skl" src="icons/js.png" alt="JavaScript" title="JavaScript"> </p>
-               </span>
             </div>
         </div>
     </div>
+	<div id="bio">
+		<div id="about-me">
+			<h1>About me</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus nisl sed sem suscipit tempus. Integer mi odio, lacinia in tristique congue, egestas id est. Nulla venenatis massa ut neque facilisis, in commodo enim vestibulum. Cras id fermentum magna. Nullam ut dictum magna. Etiam rutrum tristique elit nec vestibulum. Nunc id nisl eu sem rhoncus viverra eu a eros. In tempor velit vel tincidunt ullamcorper. Curabitur sed pretium ligula, eu dictum ex. Nunc posuere, felis quis hendrerit pellentesque, neque sem convallis orci, sit amet posuere ex urna eget ipsum. Mauris imperdiet sagittis mi, eget volutpat urna laoreet quis. Praesent commodo dapibus sem non hendrerit. Morbi iaculis congue aliquam. Mauris nibh enim, consectetur ac laoreet eget, mattis a neque. In purus eros, posuere nec tortor quis, iaculis imperdiet orci. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+			</p>
+		</div>
+	</div>
     <div id="main">
         <div id="heading">
             <span>PROJECTS</span>
@@ -33,7 +50,7 @@
                 <div class="col">
 					<div id = "card">
 						<a href="https://s07k.github.io/Royal-Eats/">
-							<img src="images/royal eats.png">
+							<img id="template" src="images/royal eats.png">
 						</a>
 						<div id="card-details">
 							<b>Royal Eats</b>
@@ -48,24 +65,8 @@
 				</div>
 				<div class="col">
 					<div id = "card">
-						<a href="https://s07k.github.io/selling_site/">
-							<img src="images/selling site.png">
-						</a>
-						<div id="card-details">
-                                <b>Selling Site</b>
-                                <p>
-                                    A site made just for practice, used HTML, CSS and Bootstrap frameworks as well
-                                </p>
-                                <div id="github">
-                                    <a href="https://github.com/S07K/selling_site"><img id="ctc" src="icons/github.png" alt="see code" title="See Sorce Code" style="box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);padding: 0px;border-radius: 50%;"></a>
-                                </div>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div id = "card">
 						<a href="https://s07k.github.io/purrfect-match/">
-							<img src="images/purrfect match.png">
+							<img id="template" src="images/purrfect match.png">
 						</a>
 						<div id="card-details">
 							<b>Purrfect Match</b>
@@ -78,12 +79,11 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
+		
                 <div class="col">
 					<div id = "card">
 						<a href="https://s07k.github.io/image-gallery/">
-							<img src="images/image gallery.png">
+							<img id="template" src="images/image gallery.png">
 						</a>
 						<div id="card-details">
 							<b>Image Gallery Site</b>
@@ -99,7 +99,7 @@
 				<div class="col">
 					<div id = "card">
 						<a href="https://s07k.github.io/tribute-page/">
-							<img src="images/tribute page.png">
+							<img id="template" src="images/tribute page.png">
 						</a>
 						<div id="card-details">
 							<b>A Tribute Page</b>
@@ -111,45 +111,11 @@
                             </div>
 						</div>
 					</div>
-				</div>
-				<div class="col">
-					<div id = "card">
-						<a href="https://s07k.github.io/register/">
-							<img src="images/register.png">
-						</a>
-						<div id="card-details">
-							<b>Registration Page</b>
-							<p>
-								A site made to learn HTML form, used purely HTML and CSS
-							</p>
-                            <div id="github">
-                                <a href="https://github.com/S07K/register"><img id="ctc" src="icons/github.png" alt="see code" title="See Sorce Code" style="box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);padding: 0px;border-radius: 50%;"></a>
-                            </div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-                <div class="col">
-					<div id = "card">
-						<a href="https://S07K.github.io/Survey-form">
-							<img src="images/survey form.png">
-						</a>
-						<div id="card-details">
-							<b>A Survey Form</b>
-							<p>
-								This is a project undertaken while pursuing Responsive Web Design course (freecodecamp.org), used purely HTML and CSS
-							</p>
-                            <div id="github">
-                                <a href="https://github.com/S07K/Survey-form"><img id="ctc" src="icons/github.png" alt="see code" title="See Sorce Code" style="box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);padding: 0px;border-radius: 50%;"></a>
-                            </div>
-						</div>
-					</div>
-				</div>
+				</div>			
 				<div class="col">
 					<div id = "card">
 						<a href="https://s07k.github.io/portfolio-project/">
-							<img src="images/portfolio project.png">
+							<img id="template" src="images/portfolio project.png">
 						</a>
 						<div id="card-details">
 							<b>A portfolio project</b>
@@ -162,25 +128,57 @@
 						</div>
 					</div>
 				</div>
+				<div class="col">
+					<div id = "card">
+						<a href="#footer">
+							<img id="fake-template" src="icons/under process.png">
+						</a>
+						<div id="card-details">
+							<b>Next Project (under process)</b>
+							<p>
+								-------------------------------------<br>
+								-------------------------------------- <br>
+								---------------------------------------------- <br>
+							</p>
+                            <div id="github">
+                                <img id="ctc" class = "up" src="icons/github.png" alt="see code" title="wait till it goes live" style="box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);padding: 0px;border-radius: 50%;">
+                            </div>
+						</div>
+					</div>
+				</div>
 			</div>
+			<div style="display: flex;justify-content: center;"><div id="card" class="view_all"><a href="https://github.com/S07K" style="color: seashell;text-decoration: none;">View all the projects on github</a></div></div>
         </div>
     </div>
     <div id="footer">
-        <div><span style="font-size: 50px;">Resume</span></div>
-        <div><a href="https://drive.google.com/file/d/1Nc8bLEG-9jGwPIir_kVBKEy3ZHS8as1b/view?usp=sharing" title="View My Resume" download="LinkedIn Resume"><img id="ctc" src="icons/cv.png" alt="Resume" style="width: 200px;height: 200px;"></a></div>
-        <hr style="width: 70%;border-bottom: 1px solid whitesmoke;border-top: none;border-right: none;border-left: none;border-radius: 20px;">
-        <div><span style="font-size: 25px;">Contact Me</span></div>
-        <div id="contact">
-            <a href="mailto:shubham3431kumar@gmail.com"><img id="ctc" src="icons/mail.png" alt="mail me"></a>
-            <a href="https://wa.me/7289873431"><img id="ctc" src="icons/whatsapp.png" alt="whatsapp"></a>
-        </div>
-        <hr style="width: 60%;border-bottom: 1px solid whitesmoke;border-top: none;border-right: none;border-left: none;border-radius: 20px;">
-        <div><span style="font-size: 25px;">Social Accounts</span></div>
-        <div id="social">
-            <a href="https://www.facebook.com/profile.php?id=100012603552078"><img id="ctc" src="icons/fb.png" alt="Facebook"></a>
-            <a href="https://www.linkedin.com/in/shubham-kumar-957a33200"><img id="ctc" src="icons/in.png" alt="LinkedIn"></a>
-            <a href="https://www.instagram.com/s_7_kumar/"><img id="ctc" src="icons/insta.png" alt="Instagram"></a>
-        </div>
+		
+        <div style="display: flex;">
+			<div id="deskm">
+				<img src="icons/brand.png" alt="" id="brand" class="deskm-brand" style="width: 150px;height: 150px;">
+			</div>
+			<div id="deskm">
+				<div><a href="https://drive.google.com/file/d/1Nc8bLEG-9jGwPIir_kVBKEy3ZHS8as1b/view?usp=sharing" title="View My Resume" download="LinkedIn Resume"><img id="ctc" class="resume" src="icons/cv.png" alt="Resume" style="width: 200px;height: 200px;"></a></div>
+			</div>
+		</div>
+        <hr style="width: 80%;">
+        <div>
+			<div id="desk">
+				<div><span style="font-size: 25px;">Contact Me</span></div>
+				<div id="contact">
+					<a href="mailto:shubham3431kumar@gmail.com"><img id="ctc" src="icons/mail.png" alt="mail me"></a>
+					<a href="https://wa.me/7289873431"><img id="ctc" src="icons/whatsapp.png" alt="whatsapp"></a>
+				</div>
+			</div>
+			<hr style="width: 80%;">
+			<div id="desk">
+				<div><span style="font-size: 25px;">Social Accounts</span></div>
+				<div id="social">
+					<a href="https://www.facebook.com/profile.php?id=100012603552078"><img id="ctc" src="icons/fb.png" alt="Facebook"></a>
+					<a href="https://www.linkedin.com/in/shubham-kumar-957a33200"><img id="ctc" src="icons/in.png" alt="LinkedIn"></a>
+					<a href="https://www.instagram.com/s_7_kumar/"><img id="ctc" src="icons/insta.png" alt="Instagram"></a>
+				</div>
+			</div>
+		</div>
     </div>
 </body>
 <script src="script.js"></script>
