@@ -23,14 +23,44 @@ if(window.innerWidth >= 1000 )
     infop[2].querySelector("img").style.width = "45px";
     infop[2].querySelector("img").style.height = "45px";
     heading.innerHTML = "HERE ARE SOME OF MY PROJECTS";
+    
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+        if (document.body.scrollTop >= 520  || document.documentElement.scrollTop >= 520) {
+            document.getElementById("shubham").classList.add("slideright");
+        }
+    }
 }
 
-var links = document.querySelectorAll("#links div a");
-
-if(window.innerWidth <= 650 )
+if(window.innerWidth <= 675 )
 {
-    links[0].innerHTML = "👨‍💼";
-    links[1].innerHTML = "💪";
-    links[2].innerHTML = "👨‍💻";
-    links[3].innerHTML = "💼";
+    document.querySelector("#links").classList.add("nav-links");
 }
+
+const navslide = () => {
+    const burger = document.querySelector(".burger");
+    const nav = document.querySelector(".nav-links");
+    const navLinks = document.querySelectorAll(".nav-links div");
+
+    
+    burger.addEventListener("click", function slide() {
+        //Toggle Navlinks
+        nav.classList.toggle("nav-active");
+
+        //Transform Links
+        navLinks.forEach((link)=>{
+            if(link.style.animation){
+                link.style.animation = "";
+            }
+            else{
+                link.style.animation = "navLinkFade 1.5s ease forwards" ;
+            }
+        });
+
+        //burger animation
+        burger.classList.toggle("toggle")
+    });
+
+}
+navslide();
