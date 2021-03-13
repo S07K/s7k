@@ -49,12 +49,12 @@ const navslide = () => {
         nav.classList.toggle("nav-active");
 
         //Transform Links
-        navLinks.forEach((link)=>{
+        navLinks.forEach((link, i)=>{
             if(link.style.animation){
                 link.style.animation = "";
             }
             else{
-                link.style.animation = "navLinkFade 1.5s ease forwards" ;
+                link.style.animation = 'navLinkFade 1.5s ease forwards' ;
             }
         });
 
@@ -64,3 +64,7 @@ const navslide = () => {
 
 }
 navslide();
+
+$(window).on("load",function(){
+    $(".loader-wrapper").fadeOut("slow");
+  });
