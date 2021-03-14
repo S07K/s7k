@@ -29,6 +29,27 @@ if(window.innerWidth >= 1000 )
     function myFunction() {
         if (document.body.scrollTop >= 520  || document.documentElement.scrollTop >= 520) {
             document.getElementById("shubham").classList.add("slideright");
+            document.getElementById("info").classList.add("slideleft");
+        }
+
+        if(document.body.scrollTop >= 1037  || document.documentElement.scrollTop >= 1037){
+            document.getElementById("about-me").classList.add("slideright");
+        }
+        if(document.body.scrollTop >= 1388  || document.documentElement.scrollTop >= 1388){
+            document.getElementById("heading").classList.add("slideleft");
+            let card = document.querySelectorAll("#card");
+            for(crd of card)
+            {
+                crd.classList.add("popup");
+            }
+        }
+        if(document.body.scrollTop >= 2649  || document.documentElement.scrollTop >= 2649){
+            document.getElementById("brand").classList.add("slideright");
+            let icons = document.querySelectorAll("#ctc");
+            for(i of icons)
+            {
+                i.classList.add("popup");
+            }
         }
     }
 }

@@ -16,25 +16,24 @@ body
         width: 100%;
         height: auto;
         z-index: 2;
-        background-color: rgba(0, 0, 0, 0.7);
-        backdrop-filter: blur(10px);
+        background: linear-gradient(180deg, rgba(39, 39, 39, 0.7), rgba(0, 0, 0,0.7));
+        backdrop-filter: blur(20px);
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     #nav-brand
     {
-        width: 60px;
+        width: 200px;
         height: 60px;
-        padding: 10px;
+        padding: 1px 10px 1px 10px;
     }
     #links
     {
         margin: 0;
         height: auto;
-        padding: 10px 10px 10px 10px;
+        padding: 1px 10px 1px 10px;
         display: flex;
-        align-items: center;
         justify-content: space-between;
     }
     #links div
@@ -60,29 +59,36 @@ body
         background-color: rgb(128, 129, 129);
         margin: 5px;
         transition: all 0.3s ease;
-        border-radius: 35%;
+        border-radius: 55px;
         box-shadow: 0 0 10px rgba(77, 77, 77, 0.7);
     }
     .nav-links
     {
         position: absolute;
         right: 0px;
-        width: 60%;
+        width: 100%;
         height: 100vh !important;
         top: 0;
-        background-color: rgba(0, 0, 0, 0.74);
+        background: linear-gradient(180deg, rgba(87, 87, 87,1), rgba(0,0,0,0.7));
         -webkit-backdrop-filter: blur(10px) !important;
         backdrop-filter: blur(10px) !important;
         /* display: flex; */
         flex-direction: column;
-        justify-content: space-evenly !important;
+        align-items: center;
+        justify-content: center !important;
         transform: translateX(100%);
         transition: transform 0.4s ease-in;
     }
-    .nav-links div
+    .nav-links div a
     {
         opacity: 1;
         text-shadow: rgba(77, 77, 77, 0.7);
+    }
+    #s7k-logo
+    {
+        display: block;
+        width: 200px;
+        height: 60px;
     }
     .nav-active
     {
@@ -131,6 +137,7 @@ body
         border-radius: 10px;
         /* box-shadow: 0 0 10px var(--my_gray); */
         /* border: 1px solid var(--my_gray); */
+        letter-spacing: 4px;
     }
     #shubham
     {
@@ -145,6 +152,7 @@ body
         text-align: center;
         color: rgb(206 206 206);
         text-shadow: 0 4px 10px rgb(29 28 29);
+        background: black;
     }
     #skl
     {
@@ -161,19 +169,24 @@ body
     }
     #about-me
     {
-        padding: 20px;
-        color: whitesmoke;
+        padding: 5px 10px 5px 10px;
+        color: rgb(156, 155, 155);
         font-family: 'Dosis', sans-serif;
+        text-align: justify;
+        background: linear-gradient(360deg, rgba(58, 58, 58, 0.5),rgba(0,0,0,0.9), rgba(0,0,0,0.7));
     }
     #about-me h1
     {
+        color: rgb(156, 155, 155);
         margin-bottom: 0px;
         padding: 0 5px 3px 5px;
         font-weight: 800;
-        border-bottom: 1px solid rgba(133, 131, 131, 0.7);
+        border-bottom: 2px solid rgba(133, 131, 131, 0.7);
+        letter-spacing: 4px;
     }
     #about-me p
     {
+        font-family: candara;
         margin-top: 5px;
         color: whitesmoke;
     }
@@ -198,6 +211,7 @@ body
         color: #dfe7e6;
         text-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
         border-radius: 10px;
+        letter-spacing: 2px;
     }
     .row 
     {
@@ -270,11 +284,6 @@ body
     {
         background: whitesmoke;
     }
-    .up:hover
-    {
-        cursor: not-allowed;
-        background: rgb(175, 33, 33) !important;
-    }
     .view_all
     {
         text-align: center;
@@ -290,10 +299,10 @@ body
         font-family: candara;
         height: 100vh;
         padding: 10px ;
-        background-color: rgb(193 125 123);
+        background-color: rgb(156, 155, 155);
         /* background: url(https://images.unsplash.com/photo-1557599443-2071a2df9c19?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=782&q=80); */
-        background-position: center;
-        background-size: cover;
+        /* background-position: center;
+        background-size: cover; */
         /* background-repeat: no-repeat; */
         color: rgb(41 47 48);
         display: flex;
@@ -349,9 +358,9 @@ body
         z-index: 3;
         top: 0;
         left: 0;
-        background-color: black;
+        background: linear-gradient(180deg, gray, rgb(87, 87, 87), black);
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
 		justify-content: center;
 		align-items: center; 
 	}
@@ -362,6 +371,7 @@ body
 			  width: 30px;
 			    height: 30px;
 			  position: relative;
+              border-radius: 2px;
               border: 3px solid #ffffff;
 			  display: flex;
 			  justify-content: center;
@@ -373,6 +383,7 @@ body
             .loader-inner {
                 width: 30px;
 			    height: 30px;
+                border-radius: 0px;
                 vertical-align: top;
                 display: inline-block;
                 width: 100%;
@@ -404,9 +415,12 @@ body
     {
         display: none;
     }
+    #s7k-logo
+    {
+        display: none;
+    }
     #head
     {
-        padding-left: 40px;
         grid-template-rows: auto;
         grid-template-columns: 35% 65%;
     }
@@ -421,10 +435,6 @@ body
 
 @media (min-width: 700px)
 {
-    .burger
-    {
-        display: none;
-    }
     #info
     {
         padding-left: 40px;
@@ -462,26 +472,24 @@ body
     }
     #nav-brand:hover
     {
-        transition: 0.3s;
+        transition: 1s ease-in-out;
         cursor: pointer;
         transform: scale(1.1);
     }
     #links div a:hover
     {
-        color: rgb(193 125 123);
-    }
-    .burger{
-        display: none;
+        color: rgb(156, 155, 155);
     }
     #head
     {
         position: relative;
-        top: 500px;
+        padding-left: 40px;
+        top: 480px;
         bottom: 0px;
         backdrop-filter: blur(0px);
         box-shadow: 0 0 0px rgba(0, 0, 0, 0);  
     }
-    #shubham
+    #shubham, #info
     {
         visibility: hidden;
     }
@@ -528,14 +536,14 @@ body
         flex-direction: column;
         align-items: stretch;
         justify-content: flex-end;
-        height: 150vh;
+        height: 130vh;
     }
     #about-me
     {
         /* position: absolute; */
         bottom: 0%;
-        padding: 100px;
-        color: whitesmoke;
+        padding: 160px 200px 20px 200px;
+        visibility: hidden;
     }
     #about-me h1
     {
@@ -543,16 +551,41 @@ body
     }
     #about-me p
     {
-        font-family: candara;
         font-size: 20px;
     }
     #project
     {
         padding: 50px;
     }
+    #heading
+    {
+        visibility: hidden;
+    }
+    .slideleft {
+        animation-name: slideleft;
+        -webkit-animation-name: slideleft;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        visibility: visible !important; 
+      }
+      
+      @keyframes slideleft{
+        0% {
+            opacity: 0;
+          -webkit-transform: translateX(100%);
+        } 
+        100% {
+            opacity: 1;
+          -webkit-transform: translateX(0%);
+        }
+      }
     .row
     {
         grid-template-columns: repeat(3,auto);
+    }
+    #card
+    {
+        visibility: hidden;
     }
     #card:hover
     {
@@ -563,6 +596,26 @@ body
         cursor: pointer;
         text-decoration: underline;
     }
+    .popup
+    {
+        animation-name: popup;
+        -webkit-animation-name: popup;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        visibility: visible !important; 
+    }
+    @keyframes popup{
+        0% {
+            opacity: 0;
+            transform: scale(0);
+          -webkit-transform: scale(0);
+        } 
+        100% {
+            opacity: 1;
+            transform: scale(1);
+          -webkit-transform: scale(1);
+        }
+      }
     #template
     {
         transition: 0.2s;
@@ -581,6 +634,11 @@ body
     {
         background: whitesmoke !important;
     }
+    .up:hover
+    {
+        cursor: not-allowed;
+        background: rgb(170, 37, 37) !important;
+    }
     #footer
     {
         display: flex;
@@ -592,10 +650,12 @@ body
     {
         margin: 0;
         width: 0% !important;
+
+        /* transform: rotate(90deg); */
     }
     .deskm-brand
     {
         width: 400px !important;
-        height: 400px !important;
+        height: 120px !important;
     }
 }
