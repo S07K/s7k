@@ -29,8 +29,13 @@ if(window.innerWidth >= 1000 )
             document.getElementById("info").classList.add("slideleft");
         }
 
-        if(document.body.scrollTop >= 1037  || document.documentElement.scrollTop >= 1037){
-            document.getElementById("about-me").classList.add("slideright");
+        if(document.body.scrollTop >= 1000  || document.documentElement.scrollTop >= 1000){
+            document.getElementById("h").classList.add("slideright");
+            let para = document.querySelectorAll("#about-me p");
+                para[0].classList.add("slideleft");
+                para[1].classList.add("slideright");
+                para[2].classList.add("slideleft");
+                para[3].classList.add("slideright");
         }
         if(document.body.scrollTop >= 1388  || document.documentElement.scrollTop >= 1388){
             document.getElementById("heading").classList.add("slideleft");
