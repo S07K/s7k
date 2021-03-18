@@ -16,8 +16,8 @@ body
         width: 100%;
         height: auto;
         z-index: 2;
-        background: linear-gradient(180deg, rgb(0, 0, 0), rgba(0,0,0,0.7));;
-        backdrop-filter: blur(20px);
+        background: rgba(0, 0, 0,0.5);
+        backdrop-filter: blur(8px);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -202,11 +202,11 @@ body
     }
     #about-me h1
     {
-        color: rgb(156, 155, 155);
+        color: rgb(89, 106, 119);
         margin-bottom: 0px;
         padding: 0 5px 3px 5px;
         font-weight: 800;
-        border-bottom: 2px solid rgba(133, 131, 131, 0.7);
+        border-bottom: 2px solid rgba(89, 106, 119, 0.7);
         letter-spacing: 4px;
     }
     #about-me p
@@ -214,6 +214,13 @@ body
         font-family: candara;
         margin-top: 5px;
         color: whitesmoke;
+    }
+    #about-me span{
+        font-family: inherit;
+        font-weight: 800;
+        color: rgb(89, 106, 119);
+        padding-bottom: 10px;
+        line-height: 50px;
     }
     #main
     {
@@ -290,7 +297,7 @@ body
     }
     #card-details a:hover
     {
-        color: rgb(51, 51, 51);
+        color: rgb(89, 106, 119);
         text-decoration: underline;
     }
     #card-details b
@@ -440,13 +447,18 @@ body
 /*---------------------------------------desktop view----------------------------------------------------*/
 @media (min-width: 675px)
 {
-    .burger
-    {
-        display: none;
+    #links div:last-child{
+        padding: 0 10px 0 10px;
     }
     #s7k-logo
     {
         display: none;
+    }
+    #links div a{
+        font-size: 15px;
+    }
+    button{
+        font-size: 15px;
     }
     #head
     {
@@ -458,20 +470,17 @@ body
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-left: 40px;
+        align-items: flex-start;
     }
-    #links div:last-child{
-        padding: 0 10px 0 10px;
+    .burger
+    {
+        display: none;
     }
-
 }
 
 @media (min-width: 700px)
 {
-    #info
-    {
-        padding-left: 40px;
-        align-items: flex-start;
-    }
     .row
     {
         grid-template-columns: repeat(2,auto);
@@ -489,7 +498,7 @@ body
 @media (min-width: 1000px)
 {
     ::-webkit-scrollbar {
-        width: 10px;
+        width: 5px;
     }
       
     ::-webkit-scrollbar-track {
@@ -512,24 +521,19 @@ body
     }
     #nav-brand:hover
     {
-        transition: 1s ease-in-out;
+        transition: 0.5s ease-in-out;
         cursor: pointer;
         transform: scale(1.1);
-    }
-    #links div a{
-        font-size: 15px;
     }
     #links div a:hover
     {
         color: rgb(156, 155, 155);
-    }
-    button{
-        font-size: 15px;
+        text-decoration: strike;
     }
     button:hover{
         cursor: pointer;
         background: rgb(156, 155, 155);
-        border: 2px solid rgb(156, 155, 155);
+        border: 2px solid rgba(156, 155, 155);
         color: whitesmoke;
     }
     #quote{
@@ -607,7 +611,7 @@ body
         flex-direction: column;
         align-items: stretch;
         justify-content: flex-end;
-        height: 130vh;
+        height: 180vh;
     }
     #about-me
     {
