@@ -24,8 +24,8 @@ body
     }
     #nav-brand
     {
-        width: 200px;
-        height: 60px;
+        width: 150px;
+        height: 40px;
         padding: 1px 10px 1px 10px;
     }
     #links
@@ -77,10 +77,10 @@ body
     {
         width: 25px;
         height: 3px;
-        background-color: rgb(128, 129, 129);
+        background-color: #e5e5e5;
         margin: 5px;
         transition: all 0.3s ease;
-        border-radius: 55px;
+        border-radius: 58em;
         box-shadow: 0 0 10px rgba(77, 77, 77, 0.7);
     }
     .nav-links
@@ -90,7 +90,7 @@ body
         width: 100%;
         height: 100vh !important;
         top: 0;
-        background: linear-gradient(180deg, rgb(63, 63, 63), rgb(58, 57, 57), rgb(0, 0, 0,0.7));
+        background: linear-gradient(180deg, rgb(136, 136, 136), rgba(55, 70, 73, 0.781), rgb(0, 0, 0));
         -webkit-backdrop-filter: blur(10px) !important;
         backdrop-filter: blur(10px) !important;
         /* display: flex; */
@@ -168,11 +168,11 @@ body
         max-width: 100%;
         height: auto;
         /* border-radius: 10px ; */
-        filter: saturate(1.1);     
+        filter: saturate(1.1);    
     }
     #info
     {
-        font-family: 'Dosis', sans-serif;
+        font-family: 'Patrick Hand SC', cursive;
         text-align: center;
         color: rgb(206 206 206);
         text-shadow: 0 4px 10px rgb(29 28 29);
@@ -189,7 +189,7 @@ body
     #bio
     {
         width: 100%;
-        height: 100vh;
+        height: auto;
         background: linear-gradient(360deg, rgba(58, 58, 58, 0.5),rgba(0,0,0,0.9), rgba(0,0,0,0.7));
         letter-spacing: 2px;
     }
@@ -197,7 +197,7 @@ body
     {
         padding: 5px 10px 5px 10px;
         color: rgb(156, 155, 155);
-        font-family: 'Dosis', sans-serif;
+        font-family: 'Patrick Hand SC', cursive;
         text-align: justify;
     }
     #about-me h1
@@ -211,9 +211,10 @@ body
     }
     #about-me p
     {
-        font-family: candara;
+        font-family: 'Shadows Into Light', cursive;
         margin-top: 5px;
         color: whitesmoke;
+        text-transform: lowercase;
     }
     #about-me span{
         font-family: inherit;
