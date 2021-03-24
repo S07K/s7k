@@ -90,8 +90,8 @@ body
         width: 100%;
         height: 100vh !important;
         top: 0;
-        background: linear-gradient(180deg, rgb(136, 136, 136), rgba(136, 136, 136,0.7), rgb(0, 0, 0));
-        -webkit-backdrop-filter: blur(10px) !important;
+        background: linear-gradient(225deg, rgb(34, 34, 34), rgba(59, 59, 59, 0.8), rgb(0, 0, 0));
+        -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px) !important;
         /* display: flex; */
         flex-direction: column;
@@ -190,12 +190,36 @@ body
     {
         width: 100%;
         height: auto;
-        background: linear-gradient(360deg, rgba(58, 58, 58, 0.5),rgba(0,0,0,0.9), rgba(0,0,0,0.7));
+        background: rgba(0,0,0,0.7);
         letter-spacing: 2px;
+    }
+    #education{
+        height: auto;
+        background: rgba(0,0,0,0.7);
+        letter-spacing: 2px;
+        padding: 5px 20px 5px 20px;
+        color: rgb(156, 155, 155);
+        font-family: 'Patrick Hand SC', cursive;
+        text-align: justify;
+    }
+    #education h1{
+        color: rgb(89, 106, 119);
+        margin-bottom: 0px;
+        padding: 0 5px 3px 5px;
+        font-weight: 800;
+        border-bottom: 2px solid rgba(89, 106, 119, 0.7);
+        letter-spacing: 4px;
+    }
+    #education h2{
+        margin-bottom: 5px;
+    }
+    #education span{
+        font-family: 'Patrick Hand SC', cursive;
+        text-transform: uppercase;
     }
     #about-me
     {
-        padding: 5px 10px 5px 10px;
+        padding: 5px 20px 5px 20px;
         color: rgb(156, 155, 155);
         font-family: 'Patrick Hand SC', cursive;
         text-align: justify;
@@ -205,11 +229,12 @@ body
         color: rgb(89, 106, 119);
         margin-bottom: 0px;
         padding: 0 5px 3px 5px;
+        font-family: 'Patrick Hand SC', cursive;
         font-weight: 800;
         border-bottom: 2px solid rgba(89, 106, 119, 0.7);
         letter-spacing: 4px;
     }
-    #about-me p
+    #about-me, #education p
     {
         font-family: 'Shadows Into Light', cursive;
         margin-top: 5px;
@@ -336,7 +361,7 @@ body
         font-family: candara;
         height: 100vh;
         padding: 10px ;
-        background-color: rgb(156, 155, 155);
+        background: linear-gradient(200deg, rgb(136, 136, 136), rgba(136, 136, 136,0.7), rgba(37, 37, 37, 0.7));
         /* background: url(https://images.unsplash.com/photo-1557599443-2071a2df9c19?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=782&q=80); */
         /* background-position: center;
         background-size: cover; */
@@ -616,16 +641,17 @@ body
     }
     #about-me
     {
-        /* position: absolute; */
-        bottom: 0%;
         padding: 160px 200px 20px 200px;
         visibility: hidden;
     }
-    #about-me h1
+    #education{
+        padding: 20px 200px 20px 200px;
+    }
+    #about-me h1, #education h1
     {
         font-size: 50px;
     }
-    #about-me p
+    #about-me p, #education p
     {
         font-size: 20px;
     }
