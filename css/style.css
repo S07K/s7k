@@ -16,7 +16,7 @@ body
         width: 100%;
         height: auto;
         z-index: 2;
-        background: rgba(0, 0, 0,0.5);
+        background: linear-gradient(90deg, rgba(136, 136, 136, 0.8),rgba(136, 136, 136, 0.8), rgba(0, 0, 0, 0.3), rgba(0,0,0, 0.3));
         backdrop-filter: blur(8px);
         display: flex;
         justify-content: space-between;
@@ -212,6 +212,7 @@ body
     }
     #education h2{
         margin-bottom: 5px;
+        color: whitesmoke;
     }
     #education span{
         font-family: 'Patrick Hand SC', cursive;
@@ -250,7 +251,8 @@ body
     }
     #main
     {
-        background: url(https://images.unsplash.com/photo-1585079542156-2755d9c8a094?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80);
+        /* background: url(https://images.unsplash.com/photo-1585079542156-2755d9c8a094?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80); */
+        background: linear-gradient(180deg, rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(136, 136, 136));
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
@@ -265,28 +267,28 @@ body
         margin: 75px 40px 10px 40px;
         padding: 10px;
         backdrop-filter: blur(6px);
-        background: rgb(42 91 175 / 40%);
+        /* background: rgb(42 91 175 / 40%); */
         color: #dfe7e6;
-        text-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        text-shadow: 0 4px 10px #dfe7e6;
         border-radius: 10px;
         letter-spacing: 2px;
     }
     .row 
     {
-        padding-top: 10px;
+        margin: 10px auto 0 auto;
         display: grid;
         grid-template-rows: repeat(autofill,auto);
-        grid-template-columns: repeat(1,auto);
-        width: 100%;
+        grid-template-columns: auto;
+        width: 90%;
     }
     #card 
     {
         box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.7);
         transition: 0.3s;
-        background: rgb(66 64 64 / 30%);
+        background: rgb(136, 136, 136);
         color: #dfe7e6;
-        border: 1px solid rgb(42 91 175 / 40%);
-        border-radius: 10px;
+        /* border: 1px solid rgb(42 91 175 / 40%); */
+        border-radius: 20px;
         padding: 0.70rem;
         margin: 10px;
         width: auto;
@@ -301,14 +303,14 @@ body
     {
         background-color: rgba(104, 104, 104, 0.466);
         box-shadow: 0 0 5px rgba(133, 131, 131, 0.7);
-        border-radius: 10px;
+        border-radius: 20px;
         max-width: 100%;
         height: auto;
     }
     #card-details 
     {
         font-size: 16px;
-        text-shadow: 0 4px 5px rgba(0, 0, 0, 0.7);
+        text-shadow: 0 0px 5px rgba(0, 0, 0, 0.7);
         display: grid;
         grid-template-rows: auto auto;
         grid-template-columns: 70% 30%;
@@ -544,6 +546,7 @@ body
     nav
     {
         justify-content: space-between;
+        background: linear-gradient(163deg, rgba(136, 136, 136, 0.8),rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0,0,0, 0.3));
     }
     #nav-brand:hover
     {
@@ -616,7 +619,7 @@ body
     {
         position: absolute;
         top: 40%;
-        left: 40%;
+        left: 50%;
         font-size: 50px;
         text-shadow: 4px 2px 10px rgb(87, 87, 87);
         display: flex;
@@ -692,6 +695,7 @@ body
     #card:hover
     {
         background: rgba(0, 0, 0, 0.7);
+        box-shadow: 0 0 10px rgb(136, 136, 136);
     }
     #card b:hover
     {
@@ -724,8 +728,10 @@ body
     }
     #template:hover
     {
-        transform: scale(1.01);
+        transform: scale(1.03);
         box-shadow: 0 0 16px rgba(133, 131, 131, 0.7);
+        border-radius: 10px;
+        z-index: 3;
     }
     #github img
     {
