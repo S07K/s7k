@@ -13,7 +13,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" type="image/png" href="icons/S07KUMAR.png" style="width: 50px;height: 50px;">
-    <title>S 7 K</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<title>S 7 K</title>
 </head>
 <body>
 	<nav>
@@ -38,8 +39,8 @@
 			<q style="font-size: 40px;">It's Never The End</q>
 		</div>
         <div id="head">
-			<img id="shubham" src="images/Shubham Kumar.png" alt="shubham">
-            <div id="info">
+			<img id="shubham" src="images/Shubham Kumar.png" alt="shubham" data-aos="fade-right">
+            <div id="info" data-aos="fade-left">
                	<p style="font-family: 'Shadows Into Light', cursive;font-size:40px;margin-bottom: 0;font-weight: 600;">Shubham Kumar</p>
             	<p style="font-size: 20px;font-weight: 600;">Frontend Web Developer</p>
                 <p style="font-size: 16px;vertical-align: middle;">Student at SSCBS <img id="skl" style="width: 20px;height: 20px;" src="icons/graduate.png" alt="graduate">'22</p>
@@ -49,14 +50,14 @@
 	<div id="bio">
 		<div id="about-me">
 			<h1 id="h">About me</h1>
-			<p>
+			<p data-aos="fade-right">
 				A front-end web developer curious to design great web pages, which is customizable, user-friendly and interactive enough to attract maximum no. of users.  
 			</p>
-			<p>
+			<p data-aos="fade-left">
 				<span>What am i doing right now ?</span><br>
 				Currently a student, pursuing B.Sc. (H) Computer Science course from Shaheed Sukhdev College of Business Studies (SSCBS).
 			</p>
-			<p>
+			<p data-aos="fade-right">
 				<span>What am i looking for ?</span><br>
 				Looking for various opportunities in the field of Front-end Development, so that I get more experience in this field that how the corporate sector work in a team and what different technologies they use to satisfy their users/customers.
 			</p>
@@ -65,26 +66,26 @@
 	</div>
 	<div id="education">
 		<h1 id="h">Experience</h1>
-			<p>
+			<div data-aos="fade-right">
 				<h2>AISSE</h2>
 				<div><span>Year </span>: 2017</div>
 				<span>Institute </span>: Bal Bhavan Public Sr. Sec. School, Laxmi Nagar, Delhi, India.
-			</p>
-			<p>
+			</div>
+			<div data-aos="fade-left">
 				<h2>AISSCE (Science)</h2>
 				<div><span>Year </span>: 2019</div>
 				<span>Institute </span>: Bal Bhavan Public Sr. Sec. School, Laxmi Nagar, Delhi, India.
-			</p>
-			<p>
+			</div>
+			<div data-aos="fade-right">
 				<h2>B.Sc. (H) Computer Science (pursuing)</h2>
 				<div><span>Year </span>: 2022</div>
 				<span>Institute </span>: Shaheed Sukhdev College of Business Studies (University of Delhi)
-			</p>
-			<p>
+			</div>
+			<div data-aos="fade-left">
 				<h2>Responsive Web Design Certification (300hrs)</h2>
 				<div><span>Completed on </span>: 29<sup>th</sup> Jan 2021</div>
 				<span>Organization  </span>: FreeCodeCamp
-			</p>
+			</div>
 	</div>
     <div id="main">
         <div id="heading">
@@ -92,7 +93,7 @@
         </div>
         <div id="project">
             <div class="row">
-                <div class="col">
+                <div class="col" data-aos="fade-right">
 					<div id = "card">
 						<a href="https://s07k.github.io/Royal-Eats/">
 							<img id="template" src="images/royal eats.png">
@@ -108,7 +109,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col">
+				<div class="col" data-aos="zoom-in-up">
 					<div id = "card">
 						<a href="https://s07k.github.io/purrfect-match/">
 							<img id="template" src="images/purrfect match.png">
@@ -124,7 +125,7 @@
 						</div>
 					</div>
 				</div>		
-				<div class="col">
+				<div class="col" data-aos="fade-left">
 					<div id = "card">
 						<a href="https://vaibhavgupta05.github.io/Healthy-Me/">
 							<img id="template" src="images/Healthy Me.jpeg">
@@ -147,10 +148,10 @@
     <div id="footer">
 		
         <div>
-			<div id="deskm">
+			<div id="deskm" data-aos="zoom-out-right">
 				<img src="icons/Shubham.png" alt="" id="brand" class="deskm-brand" style="width: 200px;height: 60px;">
 			</div>
-			<div id="deskm">
+			<div id="deskm" data-aos="zoom-in-up">
 				<div><a href="https://drive.google.com/file/d/1Nc8bLEG-9jGwPIir_kVBKEy3ZHS8as1b/view?usp=sharing" title="View My Resume" download="LinkedIn Resume"><img id="ctc" class="resume" src="icons/cv.png" alt="Resume" style="width: 200px;height: 200px;"></a></div>
 			</div>
 		</div>
@@ -178,6 +179,15 @@
 		<img src="icons/Shubham.png" alt="" style="vertical-align: middle;padding-right: 10px;width: 200px;height: 60px;">
 		<div class="loader"><div class="loader-inner"></div></div><p style="color: whitesmoke;font-family: candara;font-size: 18px; vertical-align: middle;"></p>
 	</div>
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			offset: 400,
+			duration: 1200
+		});
+	  </script>
+
 </body>
 <script src="script.js"></script>
 </html>
