@@ -9,6 +9,10 @@ body
     background: black;
     overflow-x: hidden;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
 /*-------------------------------------------------Mobile View------------------------------------*/
     nav
     {
@@ -217,6 +221,13 @@ body
     #education span{
         font-family: 'Patrick Hand SC', cursive;
         text-transform: uppercase;
+    }
+    .credential{
+        background-color: transparent;
+        border: 2px solid var(--my_gray);
+    }
+    .company-name:hover{
+        text-decoration: underline;
     }
     #about-me
     {
