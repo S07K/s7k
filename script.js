@@ -21,39 +21,6 @@ if(window.innerWidth >= 1000 )
     infop[2].querySelector("img").style.height = "40px";
     heading.innerHTML = "HERE ARE SOME OF MY PROJECTS";
     
-    window.onscroll = function() {myFunction()};
-
-    function myFunction() {
-        if (document.body.scrollTop >= 520  || document.documentElement.scrollTop >= 520) {
-            document.getElementById("shubham").classList.add("slideright");
-            document.getElementById("info").classList.add("slideleft");
-        }
-
-        if(document.body.scrollTop >= 1000  || document.documentElement.scrollTop >= 1000){
-            document.getElementById("h").classList.add("slideright");
-            let para = document.querySelectorAll("#about-me p");
-                para[0].classList.add("slideleft");
-                para[1].classList.add("slideright");
-                para[2].classList.add("slideleft");
-                para[3].classList.add("slideright");
-        }
-        if(document.body.scrollTop >= 1388  || document.documentElement.scrollTop >= 1388){
-            document.getElementById("heading").classList.add("slideleft");
-            let card = document.querySelectorAll("#card");
-            for(crd of card)
-            {
-                crd.classList.add("popup");
-            }
-        }
-        if(document.body.scrollTop >= 2649  || document.documentElement.scrollTop >= 2649){
-            document.getElementById("brand").classList.add("slideright");
-            let icons = document.querySelectorAll("#ctc");
-            for(i of icons)
-            {
-                i.classList.add("popup");
-            }
-        }
-    }
 }
 
 if(window.innerWidth <= 675 )

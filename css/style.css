@@ -185,8 +185,8 @@ a{
     }
     #skl
     {
-        width: 31px;
-        height: 31px;
+        width: 51px;
+        height: 51px;
         vertical-align: middle;
         transition: all .3s ease;
     }
@@ -225,6 +225,7 @@ a{
     .credential{
         background-color: transparent;
         border: 2px solid var(--my_gray);
+        font-size: 14px;
     }
     .company-name:hover{
         text-decoration: underline;
@@ -250,7 +251,7 @@ a{
     {
         font-family: 'Shadows Into Light', cursive;
         margin-top: 5px;
-        color: whitesmoke;
+        color: white;
         text-transform: lowercase;
     }
     #about-me span{
@@ -259,6 +260,9 @@ a{
         color: rgb(89, 106, 119);
         padding-bottom: 10px;
         line-height: 50px;
+    }
+    .skill{
+        text-align: center;
     }
     #main
     {
@@ -357,7 +361,7 @@ a{
     }
     #github img
     {
-        background: whitesmoke;
+        background: white;
     }
     .view_all
     {
@@ -374,16 +378,19 @@ a{
         font-family: candara;
         height: 100vh;
         padding: 10px ;
-        background: rgb(136, 136, 136);
+        background: rgb(0, 0, 0);
         /* background: url(https://images.unsplash.com/photo-1557599443-2071a2df9c19?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=782&q=80); */
         /* background-position: center;
         background-size: cover; */
         /* background-repeat: no-repeat; */
-        color: rgb(41 47 48);
+        color: #dfe7e6;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    #deskm-brand{
+        height: 65px;
     }
     #contact
     {
@@ -604,11 +611,11 @@ a{
         backdrop-filter: blur(0px);
         box-shadow: 0 0 0px rgba(0, 0, 0, 0);  
     }
-    #shubham, #info
+    /* #shubham, #info
     {
         visibility: hidden;
-    }
-    .slideright {
+    } */
+    /* .slideright {
         animation-name: slideright;
         -webkit-animation-name: slideright;
         animation-duration: 1s;
@@ -625,7 +632,7 @@ a{
             opacity: 1;
           -webkit-transform: translateX(-0%);
         }
-      }
+      } */
     #info
     {
         position: absolute;
@@ -644,6 +651,7 @@ a{
     #skl:hover, #ctc:hover
     {
         transform: scale(1.1);
+        cursor: pointer;
     }
     #bio
     {
@@ -656,7 +664,7 @@ a{
     #about-me
     {
         padding: 160px 200px 20px 200px;
-        visibility: hidden;
+        /* visibility: hidden; */
     }
     #education{
         padding: 20px 200px 20px 200px;
@@ -669,15 +677,18 @@ a{
     {
         font-size: 20px;
     }
+    .skill{
+        text-align: left;
+    }
     #project
     {
         padding: 50px;
     }
-    #heading
+    /* #heading
     {
         visibility: hidden;
-    }
-    .slideleft {
+    } */
+    /* .slideleft {
         animation-name: slideleft;
         -webkit-animation-name: slideleft;
         animation-duration: 1s;
@@ -694,15 +705,15 @@ a{
             opacity: 1;
           -webkit-transform: translateX(0%);
         }
-      }
+      } */
     .row
     {
         grid-template-columns: repeat(3,auto);
     }
-    #card
+    /* #card
     {
         visibility: hidden;
-    }
+    } */
     #card:hover
     {
         background: rgba(0, 0, 0, 0.7);
@@ -713,7 +724,7 @@ a{
         cursor: pointer;
         text-decoration: underline;
     }
-    .popup
+    /* .popup
     {
         animation-name: popup;
         -webkit-animation-name: popup;
@@ -732,10 +743,10 @@ a{
             transform: scale(1);
           -webkit-transform: scale(1);
         }
-      }
+      } */
     #template
     {
-        transition: 0.2s;
+        transition: 0.2s ease-in-out;
     }
     #template:hover
     {
