@@ -406,8 +406,9 @@ a{
         align-items: center;
         justify-content: center;
     }
-    #deskm-brand{
-        height: auto;
+    .deskm-brand{
+        width: 100% !important;
+        height: auto !important;
     }
     #contact, #social
     {
