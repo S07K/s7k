@@ -3,6 +3,9 @@
     --my_gray : #49484b7d;
     scroll-behavior: smooth;
 }
+:root:hover{
+    user-select: none;
+}
 body
 {
     margin: 0;
@@ -176,7 +179,7 @@ a{
     }
     #info
     {
-        font-family: 'Patrick Hand SC', cursive;
+        font-family: 'Montserrat', sans-serif;
         text-align: center;
         color: rgb(206 206 206);
         text-shadow: 0 4px 10px rgb(29 28 29);
@@ -197,14 +200,26 @@ a{
         background: rgba(0,0,0,0.7);
         letter-spacing: 2px;
     }
+    #h{
+        font-family: 'Montserrat', sans-serif !important;
+        text-transform: initial;
+    }
+    #about-me p{
+        font-family: 'Montserrat', sans-serif;
+        text-transform: initial;
+        color: white !important;
+    }
+    #about-me span{
+        color: rgba(89, 106, 119, 0.808) !important;
+    }
     #education{
         height: auto;
         background: rgba(0,0,0,0.7);
         letter-spacing: 2px;
         padding: 5px 20px 5px 20px;
         color: rgb(156, 155, 155);
-        font-family: 'Patrick Hand SC', cursive;
-        text-align: justify;
+        font-family: candara;
+        text-align: left;
     }
     #education h1{
         color: rgb(89, 106, 119);
@@ -233,15 +248,16 @@ a{
     #about-me
     {
         padding: 5px 20px 5px 20px;
+        line-height: 20px;
         color: rgb(156, 155, 155);
         font-family: 'Patrick Hand SC', cursive;
-        text-align: justify;
+        text-align: left;
     }
     #about-me h1
     {
         color: rgb(89, 106, 119);
         margin-bottom: 0px;
-        padding: 0 5px 3px 5px;
+        padding: 0 5px 5px 5px;
         font-family: 'Patrick Hand SC', cursive;
         font-weight: 800;
         border-bottom: 2px solid rgba(89, 106, 119, 0.7);
@@ -358,6 +374,7 @@ a{
         align-items: center;
         justify-content: flex-end;
         padding-bottom: 20px;
+        transform: scale(0.8);
     }
     #github img
     {
@@ -390,13 +407,16 @@ a{
         justify-content: center;
     }
     #deskm-brand{
-        height: 65px;
+        height: auto;
     }
-    #contact
+    #contact, #social
     {
         display: grid;
         grid-template-rows: auto;
-        grid-template-columns: repeat(4,auto);
+        grid-template-columns: repeat(2,auto);
+    }
+    #contact a, #social a{
+        padding: 10px;
     }
     .resume
     {
@@ -409,6 +429,27 @@ a{
         height: 60px;
         padding: 10px;
         transition: 0.3s;
+    }
+    .fa-facebook-square, .fa-instagram, .fa-envelope, .fa-linkedin{
+        font-size: 50px;
+        color: rgb(156 155 155);
+        transition: 0.3s ease-in-out;
+    }
+    .fa-linkedin:hover{
+        color: #0077b5;
+        transform: scale(1.2);
+    }
+    .fa-facebook-square:hover{
+        color: #3b5998;
+        transform: scale(1.2);
+    }
+    .fa-instagram:hover{
+        color: #405de6;
+        transform: scale(1.2);
+    }
+    .fa-envelope:hover{
+        color: rgb(51, 138, 58);
+        transform: scale(1.2);
     }
     hr
     {
@@ -431,6 +472,12 @@ a{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    #desk span{
+        font-size: 40px !important;
+        color: #242A2C;
+        text-shadow: 0 0 4px white;
+        font-weight: 800 ;
     }
     .loader-wrapper 
 	{
@@ -665,6 +712,9 @@ a{
         padding: 160px 200px 20px 200px;
         /* visibility: hidden; */
     }
+    #about-me h1{
+        padding: 0 10px 20px 10px;
+    }
     #education{
         padding: 20px 200px 20px 200px;
     }
@@ -675,6 +725,7 @@ a{
     #about-me p, #education p
     {
         font-size: 20px;
+        line-height: 30px;
     }
     .skill{
         text-align: left;
@@ -788,5 +839,8 @@ a{
     {
         width: 400px !important;
         height: 120px !important;
+    }
+    #desk span{
+        font-size: 50px !important;
     }
 }
